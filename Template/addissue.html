@@ -1,0 +1,209 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+<meta name="description" content="POS - Bootstrap Admin Template">
+<meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, invoice, html5, responsive, Projects">
+<meta name="author" content="Dreamguys - Bootstrap Admin Template">
+<meta name="robots" content="noindex, nofollow">
+<title>Forus Health</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="{% static 'images/logo.png' %}">
+
+<link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+
+<link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+
+<link rel="stylesheet" href="{% static 'assets/plugins/select2/css/select2.min.css' %}">
+
+<link rel="stylesheet" href="{% static 'assets/css/dataTables.bootstrap4.min.css' %}">
+
+<link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/fontawesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/all.min.css' %}">
+
+<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+</head>
+<body>
+<div id="global-loader">
+<div class="whirly-loader"> </div>
+</div>
+
+<div class="main-wrapper">
+
+<div class="header">
+<div >
+<a href="Issued" class="logo">
+<img src="{% static 'images/forus-health.svg' %}" alt="" style="margin-left:40px; ">
+</a>
+
+</div>
+
+<ul class="nav user-menu">
+
+<li class="nav-item">
+    
+<div class="top-nav-search">
+<a href="javascript:void(0);" class="responsive-search">
+<i class="fa fa-search"></i>
+</a>
+    <a href="Issued" class="btn btn-cancel" style="margin-left: 920px; margin-top:-114px;">Back</a>
+</div>
+</li>
+
+
+
+
+
+
+<li class="nav-item dropdown has-arrow main-drop">
+
+
+</div>
+</li>
+</ul>
+
+
+<div class="dropdown mobile-user-menu">
+
+
+</div>
+
+</div>
+
+
+<div class="sidebar" id="sidebar">
+<div class="sidebar-inner slimscroll">
+<div id="sidebar-menu" class="sidebar-menu">
+<ul>
+<li class="submenu">
+<a href="javascript:void(0);"><img src="{% static 'assets/img/icons/product.svg' %}" alt="img"><span style="font-size: 18px;"> Edit Issued list </span> <span class="menu-arrow" style="font-size: 18px;  margin-top: 3px;"></span></a>
+
+</li>
+<!-- <li class="submenu">
+    <a href="javascript:void(0);"><img src="{% static 'assets/img/icons/users1.svg' %}"alt="img"><span>  Edit Stock</span> <span class="menu-arrow"></span></a>
+    <ul>
+    <li><a href="edit">Edit Stock list  </a></li>
+    </ul>
+    </li> -->
+</ul>
+</div>
+</div>
+</div>
+
+<div class="page-wrapper">
+<div class="content">
+<div class="page-header">
+<div class="page-title">
+<h4>Issued Edit</h4>
+<h6>Issued Edit Information: <h5 style="color: rgba(49, 193, 227,1 );">{{msg}}</h5></h6>
+</div>
+</div>
+<form action="addissue" method="POST">
+    {% csrf_token %}
+<div class="card">
+<div class="card-body">
+<div class="row">
+
+    <div class="col-lg-3 col-sm-6 col-12">
+        <div class="form-group">
+        <label>ID</label>
+        <input type="text" value="{{issue1.id}}" name="id" readonly>
+        </div>
+        </div>
+
+<div class="col-lg-3 col-sm-6 col-12">
+<div class="form-group">
+<label>ERP Part No</label>
+<input type="text" name="erp" value="{{issue1.ERP_NO}}" readonly>
+</div>
+</div>
+
+<div class="col-lg-3 col-sm-6 col-12">
+    <div class="form-group">
+    <label>Current Stock Balance</label>
+    <input type="text" id="input1"  value="{{issue1.sb}}"  readonly>
+    </div>
+    </div>
+
+<div class="col-lg-3 col-sm-6 col-12">
+    <div class="form-group">
+    <label>Nos. Issued</label>
+    <input style="color:black;" type="text" id="input2" name="no_issue" value="{{issue1.no_issue}}" required>
+    </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 col-12">
+        <div class="form-group">
+        <p class="sign" id="substract" style="font-size: 15px;"> Total Stock Balance
+           <br><input id="output1" size="20" name="sb" value="{{issue1.sb}}" style="height: 38px; margin-top:6px;" readonly />
+        </p>
+       
+    </div>
+        </div>
+    <script>
+    
+        var do_calcul = function() {
+            var num1 = Number(document.getElementById("input1").value);
+            var num2 = Number(document.getElementById("input2").value);
+            
+            var result;
+        
+            if (this.id == "substract") {
+                result = num1 - num2 ;
+            } 
+            
+            document.getElementById("output1").value = result;
+        };
+        
+        var signs_buttons = document.getElementsByClassName("sign");
+        for(var i=0;i<signs_buttons.length;i++){
+            signs_buttons[i].addEventListener('click', do_calcul, false);
+        }
+            </script>
+    <div class="col-lg-12">
+    <div class="form-group">
+    <label>Reference Document Number </label>
+    <input class="form-control" name="rdno" value="{{issue1.rdno}}" required>
+    </div>
+    </div>
+
+    <div class="col-lg-12">
+            <div class="form-group">
+            <label>Remarks </label>
+            <input class="form-control" name="rm" value="{{issue1.remarks}}" required>
+            </div>
+            </div>
+
+<div class="col-lg-12">
+    <input type="Submit"class="btn btn-submit me-2" name="submit">
+</form>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+
+<script src="{% static 'assets/js/feather.min.js' %}"></script>
+
+<script src="{% static 'assets/js/jquery.slimscroll.min.js' %}"></script>
+
+<script src="{% static 'assets/js/jquery.dataTables.min.js' %}"></script>
+<script src="{% static 'assets/js/dataTables.bootstrap4.min.js' %}"></script>
+
+<script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+
+<script src="{% static 'assets/plugins/select2/js/select2.min.js' %}"></script>
+
+<script src="{% static 'assets/plugins/sweetalert/sweetalert2.all.min.js' %}"></script>
+<script src="{% static 'assets/plugins/sweetalert/sweetalerts.min.js' %}"></script>
+
+<script src="{% static 'assets/js/script.js' %}"></script>
+</body>
+</html>

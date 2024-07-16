@@ -1,0 +1,200 @@
+{% load static %}
+<html>
+<link rel="stylesheet" type="text/css" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet" type="text/css">
+<!-- <h3 style='text-align: center;border-bottom: 2px solid #666; display:inline-block;padding-bottom:1px'>Finished Goods</h3> -->
+<div id="carouselFade" class="carousel slide carousel-fade" data-ride="carousel">
+ <!-- <a href="FG" style="color: white; font-size:40px; margin-top: -630px; float: right;" >Back</a> -->
+  <!-- Wrapper for slides -->
+  <div class="carousel-inner" role="listbox">
+    <!-- <div class="item active">
+      <div class="carousel-caption">
+<h1 style='text-align: center;margin-top: -623px; font-family: sans-serif; font-size: 50px; display:inline-block;padding-bottom:1px'><strong>Finished Goods</strong></h1>
+
+<a href="FG" class="active" ><img src="{% static 'images/img/img.png' %}" style="background-size:cover; font-size:40px; margin-top: -623px; float: right; margin-right: 20px; height: 60px;"></a>
+        <h1 style="margin-bottom: -45px; font-size: 50px; text-align:center; font-family: sans-serif;"><strong>Classic Current Stock : {{y1}} Nos.</strong></h1>
+        </div>
+    </div> -->
+    <div class="item active">
+      <div class="carousel-caption">
+        <h1 style='text-align: center;margin-top: -613px; font-family: sans-serif; font-size: 50px;  display:inline-block;padding-bottom:1px'><strong>Finished Goods</strong></h1>
+<a href="FG" class="active" ><img src="{% static 'images/img/b.gif' %}" style="background-size:cover; font-size:40px; margin-top: -613px; float: right; margin-right: 20px; height: 60px;"></a>
+        <h2 style="margin-bottom: -35px; font-size: 50px; font-family: sans-serif; text-align:center;"><strong>Classic HD Current Stock : {{y1}} Nos.</strong></h2>
+      </div>
+    </div>
+    <div class="item">
+      <div class="carousel-caption">
+        <h1 style='text-align: center;margin-top: -623px; font-family: sans-serif; font-size: 50px; display:inline-block;padding-bottom:1px'><strong>Finished Goods</strong></h1>
+<a href="FG" class="active" ><img src="{% static 'images/img/img.png' %}" style="background-size:cover; font-size:40px; margin-top: -623px; float: right; margin-right: 20px; height: 60px;"></a>
+        <h2 style="margin-bottom: -45px; font-size: 50px; font-family: sans-serif; text-align:center;"><strong>Classic 6.4 Current Stock : {{y2}} Nos.</strong></h2>
+      </div>
+    </div>
+    <div class="item">
+      <div class="carousel-caption">
+        <h1 style='text-align: center;margin-top: -623px; font-family: sans-serif; font-size: 50px; display:inline-block;padding-bottom:1px'><strong>Finished Goods</strong></h1>
+<a href="FG" class="active" ><img src="{% static 'images/img/img.png' %}" style="background-size:cover; font-size:40px; margin-top: -623px; float: right; margin-right: 20px; height: 60px;"></a>
+  <h2 style="margin-bottom: -45px; font-size: 50px; font-family: sans-serif; text-align:center;"><strong>Flora Current Stock : {{y3}} Nos.</strong></h2>
+      </div>
+    </div>
+    <div class="item">
+      <div class="carousel-caption">
+        <h1 style='text-align: center;margin-top: -613px; font-family: sans-serif; font-size: 50px;display:inline-block;padding-bottom:1px'><strong>Finished Goods</strong></h1>
+<a href="FG" class="active" ><img src="{% static 'images/img/img.png' %}" style="background-size:cover; font-size:40px; margin-top: -613px; float: right; margin-right: 20px; height: 60px;"></a>
+        <h2 style="margin-bottom: -35px; font-size: 50px; font-family: sans-serif; text-align:center;"><strong>Aberro Current Stock : {{y4}} Nos.</strong></h2>
+      </div>
+    </div>
+    <div class="item">
+      <div class="carousel-caption">
+        <h1 style='text-align: center;margin-top: -613px; font-family: sans-serif; font-size: 50px; display:inline-block;padding-bottom:1px'><strong>Finished Goods</strong></h1>
+<a href="FG" class="active" ><img src="{% static 'images/img/img.png' %}"
+  style="background-size:cover; font-size:40px; margin-top: -613px; float: right; margin-right: 20px; height: 60px;"></a>
+        <h2 style="margin-bottom: -35px; font-size: 50px; font-family: sans-serif; text-align:center;"><strong>Neo Current Stock : {{y5}} Nos.</strong></h2>
+      </div>
+    </div>
+     <div class="item">
+      <div class="carousel-caption">
+        <h1 style='text-align: center;margin-top: -613px; font-family: sans-serif; font-size: 50px; display:inline-block;padding-bottom:1px'><strong>Finished Goods</strong></h1>
+<a href="FG" class="active" ><img src="{% static 'images/img/img.png' %}" style="background-size:cover; font-size:40px; margin-top: -613px; float: right; margin-right: 20px; height: 60px;"></a>
+        <h2 style="margin-bottom: -35px; font-size: 50px; font-family: sans-serif; text-align:center;"><strong>Neo HD Current Stock : {{y6}} Nos.</strong></h2>
+      </div>
+    </div>
+  </div>
+
+  <!-- Controls -->
+  <a class="left carousel-control" href="#carouselFade" role="button" data-slide="prev">
+    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+    <span class="sr-only">Previous</span>
+  </a>
+  <a class="right carousel-control" href="#carouselFade" role="button" data-slide="next">
+    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+    <span class="sr-only">Next</span>
+  </a>
+</div>
+<style type="text/css">
+  body {
+  font-family: "Lato", sans-serif;
+}
+.carousel-fade .carousel-inner .item {
+  opacity: 0;
+  transition-property: opacity;
+}
+
+.carousel-fade .carousel-inner .active {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-inner .active.left,
+.carousel-fade .carousel-inner .active.right {
+  left: 0;
+  opacity: 0;
+  z-index: 1;
+}
+
+.carousel-fade .carousel-inner .next.left,
+.carousel-fade .carousel-inner .prev.right {
+  opacity: 1;
+}
+
+.carousel-fade .carousel-control {
+  z-index: 2;
+}
+@media all and (transform-3d), (-webkit-transform-3d) {
+  .carousel-fade .carousel-inner > .item.next,
+  .carousel-fade .carousel-inner > .item.active.right {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.prev,
+  .carousel-fade .carousel-inner > .item.active.left {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+  .carousel-fade .carousel-inner > .item.next.left,
+  .carousel-fade .carousel-inner > .item.prev.right,
+  .carousel-fade .carousel-inner > .item.active {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.carousel-caption {
+  text-shadow: 0 1px 4px rgba(0, 0, 0, 0.9);
+  font-size: 17px;
+}
+.carousel-caption h3 {
+  font-size: 25px;
+  font-family: "Lato", sans-serif;
+}
+html,
+body,
+.carousel,
+.carousel-inner,
+.carousel-inner .item {
+  height: 100%;
+  
+}
+/*.item:nth-child(1) {
+  background: url("{% static 'images/img/Classic.png' %}");
+  background-size: fit;
+  background-color: rgba(49, 193, 227,1 ) ;
+  background-position: center center;
+  background-repeat: no-repeat;
+}*/
+
+.item:nth-child(1) {
+  background: url("{% static 'images/img/Classic_HD.png' %}");
+  background-size: fit;
+  background-color: rgba(49, 193, 227,1 ) ;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+.item:nth-child(2) {
+  background: url("{% static 'images/img/Classic 6.4.png' %}");
+  background-size: fit;
+  background-color: rgba(49, 193, 227,1 ) ;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.item:nth-child(3) {
+  background: url("{% static 'images/img/Flora1.png' %}");
+  background-size: fit;
+  background-color: rgba(49, 193, 227,1 ) ;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.item:nth-child(4) {
+  background: url("{% static 'images/img/Aberro.png' %}");
+  background-size: fit;
+  background-color: rgba(49, 193, 227,1 ) ;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.item:nth-child(5) {
+  background: url("{% static 'images/img/Neo.png' %}");
+  background-size: fit;
+  background-color: rgba(49, 193, 227,1 ) ;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+.item:nth-child(6) {
+  background: url("{% static 'images/img/Neohd.png' %}");
+  background-size: fit;
+  background-color: rgba(49, 193, 227,1 ) ;
+  background-position: center center;
+  background-repeat: no-repeat;
+}
+
+
+</style>
+<script type="text/javascript">
+  
+  $('#carouselFade').carousel();
+</script>
+<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<!-- Include all compiled plugins (below), or include individual files as needed -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/js/bootstrap.min.js"></script>
+</html>

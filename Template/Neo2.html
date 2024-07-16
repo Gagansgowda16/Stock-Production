@@ -1,0 +1,520 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Forus Health</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'images/logo.png' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css ' %}" rel="stylesheet" />
+    
+   
+<style>
+.topnav {
+  overflow: hidden;
+  background-color: rgba(49, 193, 227,1 );;
+  position: relative;
+}
+
+.note {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 4px 8px;
+  border-radius: 0.25rem;
+  background-color: rgba(49, 193, 227,1 );
+  font-size: 14px;
+  font-weight: 700;
+}
+
+
+.topnav a {
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+
+
+.topnav a:hover {
+  color: white;
+}
+
+.active {
+  background-color: white;
+  color: skyblue;
+}
+
+</style>
+
+</head>
+
+
+
+
+<!-- Top Navigation Menu -->
+<div class="topnav" >
+  <a href="Neo2" class="active" ><img src="{% static 'images/logo.png' %}" style="background-size:cover; height: 35px;"></a>
+  <div id="myLinks">
+    <a style="color: white;"><b>Forus Health</b></a>
+    <a style="margin-left: 960px;" href="dash4"><b>Back</b></a>
+</div>
+</div>
+        <!-- Masthead-->
+        
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container">
+              
+               <h1 style="text-align: center; color: rgba(49, 193, 227,1 ); margin-top: -50px;"><b> Neo Racks</b></h1>
+               <br>
+               <br>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center">
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                      
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" style="background-color: rgb(49, 193, 227,1);">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <span class="note">Rack 1</span>
+                            <img class="img-fluid" src="{% static 'images/ra1.png' %}" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" style="background-color: rgb(49, 193, 227,1);">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <span class="note">Rack 2</span>
+                            <img class="img-fluid" src="{% static 'images/ra1.png' %}" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" style="background-color: rgb(49, 193, 227,1);">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <span class="note">Rack 3</span>
+                            <img class="img-fluid" src="{% static 'images/ra1.png' %}" alt="..." />
+                        </div>
+                    </div>
+                   
+                </div>
+            </div>
+        </section>
+
+      
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true" >
+            <div class="modal-dialog modal-xl" style="width: 700px; height: 100px;">
+                <div class="modal-content" >
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container"  >
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h5 class="portfolio-modal-title text-secondary text-uppercase mb-0" style="font-size: 30px;" > Neo - Rack1</h5>
+                                    <br>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" style="font-size: 25px;" > shelf 1</h2>
+                                    <!-- Icon Divider-->
+                                    <br>
+                                    <!-- Portfolio Modal - Image-->
+                                    <a href="adbin1837">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin1</b></a>
+                                    <a href="adbin1838">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin2</b></a>
+                                    <a href="adbin1839">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin3</b></a>
+                                    <a href="adbin1840">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin4</b></a>
+                                    <a href="adbin1841">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin5</b></a>
+                                    <a href="adbin1842">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin6</b></a>
+
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" style="font-size: 25px;" > shelf 2</h2>
+                                    <!-- Icon Divider-->
+                                    <br>
+                                    <!-- Portfolio Modal - Image-->
+                                    <a href="adbin1843">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin1</b></a>
+                                    <a href="adbin1844">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin2</b></a>
+                                    <a href="adbin1845">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin3</b></a>
+                                    <a href="adbin1846">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin4</b></a>
+                                    <a href="adbin1847">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin5</b></a>
+                                    <a href="adbin1848">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin6</b></a>
+                                    
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" style="font-size: 25px;" > shelf 3</h2>
+                                    <!-- Icon Divider-->
+                                    <br>
+                                    <!-- Portfolio Modal - Image-->
+                                    <a href="adbin1849">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin1</b></a>
+                                    <a href="adbin1850">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin2</b></a>
+                                    <a href="adbin1851">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin3</b></a>
+                                    <a href="adbin1852">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin4</b></a>
+                                    <a href="adbin1853">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin5</b></a>
+                                    <a href="adbin1854">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin6</b></a>
+                                   
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" style="font-size: 25px;" > shelf 4</h2>
+                                    <!-- Icon Divider-->
+                                    <br>
+                                    <!-- Portfolio Modal - Image-->
+                                    <a href="adbin1855">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin1</b></a>
+                                    <a href="adbin1856">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin2</b></a>
+                                    <a href="adbin1857">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin3</b></a>
+                                    <a href="adbin1858">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin4</b></a>
+                                    <a href="adbin1859">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin5</b></a>
+                                    <a href="adbin1860">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin6</b></a>
+                                    
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"style="font-size: 25px;" > shelf 5</h2>
+                                    <!-- Icon Divider-->
+                                    <br>
+                                    <!-- Portfolio Modal - Image-->
+                                    <a href="adbin1861">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin1</b></a>
+                                    <a href="adbin1862">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin2</b></a>
+                                    <a href="adbin1863">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin3</b></a>
+                                    <a href="adbin1864">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin4</b></a>
+                                    <a href="adbin1865">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin5</b></a>
+                                    <a href="adbin1866">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin6</b></a>
+
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" style="font-size: 25px;" > shelf 6</h2>
+                                    <!-- Icon Divider-->
+                                    <br>
+                                    <!-- Portfolio Modal - Image-->
+                                    <a href="adbin1867">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin1</b></a>
+                                    <a href="adbin1868">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin2</b></a>
+                                    <a href="adbin1869">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin3</b></a>
+                                    <a href="adbin1870">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin4</b></a>
+                                    <a href="adbin1871">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin5</b></a>
+                                    <a href="adbin1872">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin6</b></a>
+
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" style="background-color:rgba(49, 193, 227,1 );">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl" style="width: 700px; height: 100px;">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    
+                                    <h5 class="portfolio-modal-title text-secondary text-uppercase mb-0" style="font-size: 30px;" > Neo - Rack2</h5>
+                                    <br>
+                                    <h6 class="portfolio-modal-title text-secondary text-uppercase mb-0" style="font-size: 25px;" > shelf 1</h6>
+                                    <!-- Icon Divider-->
+                                    <br>
+                                    <!-- Portfolio Modal - Image-->
+                                    <a href="adbin1873">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin1</b></a>
+                                    <a href="adbin1874">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin2</b></a>
+                                    <a href="adbin1875">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin3</b></a>
+                                    <a href="adbin1876">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin4</b></a>
+                                    <a href="adbin1877">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin5</b></a>
+                                    <a href="adbin1878">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin6</b></a>
+
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"style="font-size: 25px;" > shelf 2</h2>
+                                    <!-- Icon Divider-->
+                                    <br>
+                                    <!-- Portfolio Modal - Image-->
+                                    <a href="adbin1879">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin1</b></a>
+                                    <a href="adbin1880">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin2</b></a>
+                                    <a href="adbin1881">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin3</b></a>
+                                    <a href="adbin1882">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin4</b></a>
+                                    <a href="adbin1883">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin5</b></a>
+                                    <a href="adbin1884">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin6</b></a>
+                                    
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" style="font-size: 25px;" > shelf 3</h2>
+                                    <!-- Icon Divider-->
+                                    <br>
+                                    <!-- Portfolio Modal - Image-->
+                                    <a href="adbin1885">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin1</b></a>
+                                    <a href="adbin1886">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin2</b></a>
+                                    <a href="adbin1887">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin3</b></a>
+                                    <a href="adbin1888">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin4</b></a>
+                                    <a href="adbin1889">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin5</b></a>
+                                    <a href="adbin1890">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin6</b></a>
+                                   
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" style="font-size: 25px;" > shelf 4</h2>
+                                    <!-- Icon Divider-->
+                                    <br>
+                                    <!-- Portfolio Modal - Image-->
+                                    <a href="adbin1891">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin1</b></a>
+                                    <a href="adbin1892">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin2</b></a>
+                                    <a href="adbin1893">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin3</b></a>
+                                    <a href="adbin1894">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin4</b></a>
+                                    <a href="adbin1895">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin5</b></a>
+                                    <a href="adbin1896">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin6</b></a>
+                                    
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" style="font-size: 25px;" > shelf 5</h2>
+                                    <!-- Icon Divider-->
+                                    <br>
+                                    <!-- Portfolio Modal - Image-->
+                                    <a href="adbin1897">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin1</b></a>
+                                    <a href="adbin1898">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin2</b></a>
+                                    <a href="adbin18989">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin3</b></a>
+                                    <a href="adbin1900">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin4</b></a>
+                                    <a href="adbin1901">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin5</b></a>
+                                    <a href="adbin1902">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin6</b></a>
+
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"style="font-size: 25px;" > shelf 6</h2>
+                                    <!-- Icon Divider-->
+                                    <br>
+                                    <!-- Portfolio Modal - Image-->
+                                    <a href="adbin1903">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin1</b></a>
+                                    <a href="adbin1904">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin2</b></a>
+                                    <a href="adbin1905">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin3</b></a>
+                                    <a href="adbin1906">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin4</b></a>
+                                    <a href="adbin1907">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin5</b></a>
+                                    <a href="adbin1908">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin6</b></a>
+<!-- Portfolio Modal - Text-->
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" style="background-color:rgba(49, 193, 227,1 );">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl"style="width: 700px; height: 100px;">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h5 class="portfolio-modal-title text-secondary text-uppercase mb-0" style="font-size: 30px;" > Neo - Rack3</h5>
+                                    <br>
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" style="font-size: 25px;" > shelf 1</h2>
+                                    <!-- Icon Divider-->
+                                    <br>
+                                    <!-- Portfolio Modal - Image-->
+                                    <a href="adbin1909">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin1</b></a>
+                                    <a href="adbin1910">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin2</b></a>
+                                    <a href="adbin1911">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin3</b></a>
+                                    <a href="adbin1912">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin4</b></a>
+                                    <a href="adbin1913">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin5</b></a>
+                                    <a href="adbin1914">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin6</b></a>
+
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" style="font-size: 25px;" > shelf 2</h2>
+                                    <!-- Icon Divider-->
+                                    <br>
+                                    <!-- Portfolio Modal - Image-->
+                                    <a href="adbin1915">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin1</b></a>
+                                    <a href="adbin1916">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin2</b></a>
+                                    <a href="adbin1917">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin3</b></a>
+                                    <a href="adbin1918">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin4</b></a>
+                                    <a href="adbin1919">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin5</b></a>
+                                    <a href="adbin1920">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin6</b></a>
+                                    
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0"style="font-size: 25px;"> shelf 3</h2>
+                                    <!-- Icon Divider-->
+                                    <br>
+                                    <!-- Portfolio Modal - Image-->
+                                    <a href="adbin1921">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin1</b></a>
+                                    <a href="adbin1922">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin2</b></a>
+                                    <a href="adbin1923">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin3</b></a>
+                                    <a href="adbin1924">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin4</b></a>
+                                    <a href="adbin1925">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin5</b></a>
+                                    <a href="adbin1926">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin6</b></a>
+                                   
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" style="font-size: 25px;" > shelf 4</h2>
+                                    <!-- Icon Divider-->
+                                    <br>
+                                    <!-- Portfolio Modal - Image-->
+                                    <a href="adbin1927">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin1</b></a>
+                                    <a href="adbin1928">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin2</b></a>
+                                    <a href="adbin1929">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin3</b></a>
+                                    <a href="adbin1930">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin4</b></a>
+                                    <a href="adbin1931">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin5</b></a>
+                                    <a href="adbin1932">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin6</b></a>
+                                    
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" style="font-size: 25px;" > shelf 5</h2>
+                                    <!-- Icon Divider-->
+                                    <br>
+                                    <!-- Portfolio Modal - Image-->
+                                    <a href="adbin1933">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin1</b></a>
+                                    <a href="adbin1934">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin2</b></a>
+                                    <a href="adbin1935">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin3</b></a>
+                                    <a href="adbin1936">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin4</b></a>
+                                    <a href="adbin1937">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin5</b></a>
+                                    <a href="adbin1938">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin6</b></a>
+
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0" style="font-size: 25px;" > shelf 6</h2>
+                                    <!-- Icon Divider-->
+                                    <br>
+                                    <!-- Portfolio Modal - Image-->
+                                    <a href="adbin1939">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin1</b></a>
+                                    <a href="adbin1940">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin2</b></a>
+                                    <a href="adbin1941">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );" >Bin3</b></a>
+                                    <a href="adbin1942">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin4</b></a>
+                                    <a href="adbin1943">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin5</b></a>
+                                    <a href="adbin1944">
+                                    <img class="img-fluid rounded mb-5" style="width: 30px; height: 30px;" src="{% static 'images/r1a.png' %}"alt="..." /> <b style="color: rgba(49, 193, 227,1 );">Bin6</b></a>
+
+                                   
+                                    
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" style="background-color:rgba(49, 193, 227,1 );">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+         
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'js/scripts.js' %}"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

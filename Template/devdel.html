@@ -1,0 +1,344 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+<meta name="description" content="POS - Bootstrap Admin Template">
+<meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, invoice, html5, responsive, Projects">
+<meta name="author" content="Dreamguys - Bootstrap Admin Template">
+<meta name="robots" content="noindex, nofollow">
+<title>Forus Health</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="{% static 'images/logo.png' %}">
+
+<link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+
+<link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+
+<link rel="stylesheet" href="{% static 'assets/plugins/select2/css/select2.min.css' %}">
+
+<link rel="stylesheet" href="{% static 'assets/css/dataTables.bootstrap4.min.css' %}">
+
+<link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/fontawesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/all.min.css' %}">
+
+<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+</head>
+<body>
+  <style type="text/css">
+      div.scrollmenu {
+  background-color: white;
+  overflow: auto;
+  white-space: nowrap;
+}
+
+div.scrollmenu a {
+  display: inline-block;
+  color: white;
+  text-align: center;
+  padding: 14px;
+  text-decoration: none;
+}
+
+
+  </style>
+  
+  <!--Add External Libraries - JQuery and jspdf 
+  check out url - https://scotch.io/@nagasaiaytha/generate-pdf-from-html-using-jquery-and-jspdf
+  -->
+  <script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
+<div id="global-loader">
+<div class="whirly-loader" > </div>
+</div>
+
+<div class="main-wrapper">
+
+<div class="header">
+
+<div >
+<a href="device_datalist" class="logo">
+<img src="{% static 'images/forus-health.svg' %}" alt="" style="margin-left:40px; ">
+</a>
+
+<!-- <a id="toggle_btn" href="javascript:void(0);">
+</a> -->
+</div>
+<div class="col-lg-12">
+  <a href="FG" class="btn btn-cancel" style="margin-left: 1200px; margin-top: -114px;">Back</a>
+  </div> 
+
+<!-- <style>
+  
+  .circle1 {
+      width: 100px;
+      height: 100px;
+      background: rgba(49, 193, 227,1 );
+      color: white;
+      border: 2px solid #000;
+      border-radius: 50%;
+      margin-top: 70px;
+      margin-left: 40px;
+    }
+ </style>
+ <div class="circle1" style="text-align: center; " ><b><h2 style="margin-top: 25px;">{{ab}}</h2></b></div>
+<h3>Total Stock Balance</h3>
+</li> -->
+
+
+<!-- <li class="submenu">
+    <a href="javascript:void(0);"><img src="{% static 'assets/img/icons/users1.svg' %}"alt="img"><span> Stock Edit</span> <span class="menu-arrow"></span></a>
+    <ul>
+    <li><a href="edit">Edit Bin  </a></li>
+    </ul>
+    </li> -->
+
+</div>
+</div>
+<br>
+<div class="page-wrapper"  id="content" style="margin-left: 10px;">
+<div class="content" >
+<div class="page-header">
+<div class="page-title">
+  
+   
+  <style>
+    
+  .circle1 {
+    width: 100px;
+    height: 100px;
+    background: rgba(49, 193, 227,1 );
+    color: white;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin-top: -80px;
+    margin-left: 350px;
+  }
+  .circle2 {
+    width: 100px;
+    height: 100px;
+    background: rgba(49, 193, 227,1 );
+    color: white;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin-top: -127px;
+    margin-left: 500px;
+  }
+  .circle3 {
+    width: 100px;
+    height: 100px;
+    background: rgba(49, 193, 227,1 );
+    color: white;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin-top: -127px;
+    margin-left: 650px;
+  }
+  .circle4 {
+    width: 100px;
+    height: 100px;
+    background: rgba(49, 193, 227,1 );
+    color: white;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin-top: -127px;
+    margin-left: 800px;
+  }
+  .circle5 {
+    width: 100px;
+    height: 100px;
+    background: rgba(49, 193, 227,1 );
+    color: white;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin-top: -127px;
+    margin-left: 950px;
+  }
+  .circle6 {
+    width: 100px;
+    height: 100px;
+    background: rgba(49, 193, 227,1 );
+    color: white;
+    border: 2px solid #000;
+    border-radius: 50%;
+    margin-top: -127px;
+    margin-left: 1100px;
+  }
+</style>
+
+ 
+<h3 style="font-size: 25px;">Device Edit</h3>
+<h5>Device Information:</h5>
+<div class="circle1" style="text-align: center; " ><b><h2 style="margin-top: 25px;">{{ab5}}</h2></b></div>
+<h3 style="margin-left: 370px;">Classic</h3>
+<div class="circle2" style="text-align: center; " ><b><h2 style="margin-top: 25px;">{{ab1}}</h2></b></div>
+<h3 style="margin-left: 500px;">Classic HD</h3>
+<div class="circle3" style="text-align: center; " ><b><h2 style="margin-top: 25px;">{{ab2}}</h2></b></div>
+<h3 style="margin-left: 650px;">Classic 6.4</h3>
+<div class="circle4" style="text-align: center; " ><b><h2 style="margin-top: 25px;">{{ab3}}</h2></b></div>
+<h3 style="margin-left: 830px;">Flora</h3>
+<div class="circle5" style="text-align: center; " ><b><h2 style="margin-top: 25px;">{{ab4}}</h2></b></div>
+<h3 style="margin-left: 970px;">Aberro</h3>
+<div class="circle6" style="text-align: center; " ><b><h2 style="margin-top: 25px;">{{ab6}}</h2></b></div>
+<h3 style="margin-left: 1135px;">Neo</h3>
+
+</li>
+</div>
+</div>
+<style>
+      * { font-family: calibri; font-size: 20px; }
+        
+      table
+      {
+        width: 300px;
+      }
+      table, th, td 
+      {
+        border: solid 1px #DDD;
+        border-collapse: collapse;
+        padding: 2px 3px;
+        text-align: center;
+      }
+    </style>
+ <script>
+    function createPDF() {
+        var sTable = document.getElementById('tab').innerHTML;
+
+        var style = "<style>";
+        style = style + "table {width: 100%;font: 17px Calibri;}";
+        style = style + "table, th, td {border: solid 1px #DDD; border-collapse: collapse;";
+        style = style + "padding: 2px 3px;text-align: center;}";
+        style = style + "</style>";
+
+        // CREATE A WINDOW OBJECT.
+        var win = window.open('', '', 'height=700,width=700');
+
+        
+        window.document.write('<html><head>');
+        window.document.write('<h2><center><b>Device Stock List Report</b></center></h2>');   // <title> FOR PDF HEADER.
+        window.document.write(style);          // ADD STYLE INSIDE THE HEAD TAG.
+        window.document.write('</head>');
+        window.document.write('<body>');
+        window.document.write(sTable);         // THE TABLE CONTENTS INSIDE THE BODY TAG.
+        window.document.write('</body></html>');
+        window.document.close();   // CLOSE THE CURRENT WINDOW.
+        window.print();
+        window.close();
+      }
+</script>
+<div class="card" >
+<div class="card-body">
+<div class="row">
+<div class="scrollmenu">
+   <p style="margin-top:-10px">
+    <a data-bs-toggle="tooltip" title="pdf" ><img src="{% static 'assets/img/icons/pdf.svg' %}" alt="img" style="height: 35px;" type="button" value="Download PDF" 
+           id="btPrint" onclick="createPDF()">
+</a>
+  </p>
+<div id="tab">
+<table class="table  datanew ">
+<thead>
+<tr>
+<th>ID</th>  
+<th>Device Name </th>
+<th>Previous Date</th>
+<th>Previous Balance</th>
+<th>Issued</th>
+<th>Received</th>
+<th>Current Date</th>
+<th>Device Balance</th>
+<th>Remarks</th>
+<th>Update/Delete</th>
+
+
+</tr>
+</thead>
+<tbody>  
+    {% for i in dec %}
+<td>{{ i.id }}</td>
+<td>{{ i.name }}</td>
+<td>{{ i.Previous_Date}}</td>
+<td>{{ i.Previous_Balance }}</td>
+<td>{{ i.Issued }}</td>
+<td>{{ i.Received }}</td>
+<td>{{ i.Current_Date}}</td>
+<td>{{ i.Device_Balance}}</td>
+<td>{{ i.Remarks }}</td>
+<td><a href="ddelete{{i.id}}" style="text-decoration:none;background-color:rgba(49, 193, 227,1 ); color: white;width: 90px;border-style: solid;border-color: black ;"><b>Delete</b></a></td>
+</td>
+</tr> 
+
+{% endfor %}
+</tbody>
+</table>
+
+</div>
+</div>
+
+<!-- <br>
+<div id="editor"></div>
+  <button id="cmd" style="margin-right: 50px;">Generate PDF</button> -->
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+
+  <!-- <script>
+    var doc = new jsPDF();  
+var specialElementHandlers = {
+  "#editor": function (element, renderer) {
+    
+    return true;
+  }
+};
+
+$("#cmd").click(function () {
+  doc.fromHTML($("#content").html(), 15, 15, {
+    width: 175,
+    elementHandlers: specialElementHandlers
+  });
+  doc.save("sample-file.pdf");
+});</script> -->
+
+<script src="https://code.jquery.com/jquery-1.12.3.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/0.9.0rc1/jspdf.min.js"></script>
+<script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+
+<script src="{% static 'assets/js/feather.min.js' %}"></script>
+
+<script src="{% static 'assets/js/jquery.slimscroll.min.js' %}"></script>
+
+<script src="{% static 'assets/js/jquery.dataTables.min.js' %}"></script>
+<script src="{% static 'assets/js/dataTables.bootstrap4.min.js' %}"></script>
+
+<script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+
+<script src="{% static 'assets/plugins/select2/js/select2.min.js' %}"></script>
+
+<script src="{% static 'assets/plugins/sweetalert/sweetalert2.all.min.js' %}"></script>
+<script src="{% static 'assets/plugins/sweetalert/sweetalerts.min.js' %}"></script>
+
+<script src="{% static 'assets/js/script.js' %}"></script>
+</body>
+</html>
+
+
+
+  <!--Add External Libraries - JQuery and jspdf 
+  check out url - https://scotch.io/@nagasaiaytha/generate-pdf-from-html-using-jquery-and-jspdf
+  -->

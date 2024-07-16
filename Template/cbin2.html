@@ -1,0 +1,308 @@
+{% load static %}
+<style type="text/css">
+  body {
+  font-family: "Oxygen", sans-serif;
+  color: #050505;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+.main {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.cards {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+ 
+}
+
+.cards_item {
+  display: flex;
+  padding: 1rem;
+  width: 200px;
+}
+
+.card_image {
+  position: relative;
+  max-height: 250px;
+}
+
+.card_image img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+
+.note {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  padding: 4px 8px;
+  border-radius: 0.25rem;
+  background-color:skyblue;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+@media (min-width: 40rem) {
+  .cards_item {
+    width: 50%;
+  }
+}
+
+@media (min-width: 56rem) {
+  .cards_item {
+    width: 33.3333%;
+  }
+}
+
+.card {
+  background-color: white;
+  border-radius: 0.25rem;
+  box-shadow: 0 20px 40px -14px rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  overflow: hidden;
+  width: 500px;
+}
+
+.card_content {
+  position: relative;
+  padding: 16px 12px 32px 24px;
+  margin: 16px 8px 8px 0;
+  max-height: 290px;
+  overflow-y: scroll;
+}
+
+.card_content::-webkit-scrollbar {
+  width: 8px;
+}
+
+.card_content::-webkit-scrollbar-track {
+  box-shadow: 0;
+  border-radius: 0;
+}
+
+.card_content::-webkit-scrollbar-thumb {
+  background: skyblue;
+  border-radius: 15px;
+}
+
+.card_title {
+  position: relative;
+  margin: 0 0 24px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 700;
+  
+}
+
+.card_title::after {
+  position: absolute;
+  display: block;
+  width: 140px;
+  height: 2px;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: skyblue;
+  content: "";
+}
+
+hr {
+  margin: 5px auto;
+  width: 100px;
+  border-top: 2px solid skyblue;
+}
+
+.card_text p {
+  margin: 0 0 5px;
+  font-size: 18px;
+  line-height: 1.5;
+  
+}
+
+.card_text p:last-child {
+  margin: 0;
+}
+body {
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+.mobile-container {
+  max-width: 480px;
+  margin: auto;
+  background-color: #555;
+  height: 500px;
+  color: white;
+  border-radius: 10px;
+}
+
+.topnav {
+  overflow: hidden;
+  background-color: skyblue;
+  position: relative;
+}
+
+
+
+.topnav a {
+  float: left;
+  color: white;
+  padding: 14px 16px;
+  text-decoration: none;
+  font-size: 30px;
+}
+
+
+
+.topnav a:hover {
+  color: white;
+}
+
+.active {
+  background-color: white;
+  color: skyblue;
+}
+
+</style>
+
+</head>
+
+<!-- Top Navigation Menu -->
+<div class="topnav" >
+  <a href="cbin2" class="active" ><img src="{% static 'images/logo.png' %}" style="background-size:cover; height: 35px;"></a>
+  <div id="myLinks">
+    <a><b>Forus Health</b></a>
+    <a style="margin-left: 1115px;" href="classichd"><b>Back</b></a>
+</div>
+</div>
+    <div class="topnav" style="background-color:transparent;">
+  
+  
+</div>
+<h1 style="text-align: center; color: skyblue;"><u>Classic HD Shelf</u></h1>
+<div class="main">
+  <ul class="cards">
+   <li class="cards_item">
+      <div class="card">
+        <div class="card_image">
+          <span class="note">Self 1</span>
+          <br>
+          <a href="Bin_info">
+          <img src="{% static 'images/rs1.png' %}" style="width:140px ; margin-left:100px ;" /></a>
+          
+        </div>
+        <div class="card_content">
+          <h2 class="card_title">Classic HD Bin 1 </h2>
+          <div class="card_text">
+            <a href="Bin_info" style="text-decoration:none"><h3 style="margin-right: 10px; text-align: center; color:  rgba(49, 193, 227,1 );" >Click here</h3></a>
+            
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image">
+          <span class="note">Self 2</span>
+          <br>
+          <img src="{% static 'images/rs1.png' %}" style="width:140px ; margin-left:100px ;" />
+        </div>
+        <div class="card_content">
+          <h2 class="card_title">Classic HD Bin 2</h2>
+          
+          <div class="card_text">
+            <a href="#" style="text-decoration:none" ><h3 style="margin-right: 10px; text-align: center; color:  rgba(49, 193, 227,1 );text-decoration:none">Click here</h3></a>
+           
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image">
+          <span class="note">Self 3</span>
+          <br>
+          <img src="{% static 'images/rs1.png' %}" style="width:140px ; margin-left:100px ;" />
+        </div>
+        <div class="card_content">
+          <h2 class="card_title">Classic HD Bin 3</h2>
+          <div class="card_text">
+            <a href="#" style="text-decoration:none" ><h3 style="margin-right: 10px; text-align: center; color:  rgba(49, 193, 227,1 );text-decoration:none">Click here</h3></a>
+          
+            <p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </li>
+    
+      <li class="cards_item">
+      <div class="card">
+        <div class="card_image">
+          <span class="note">Self 4</span>
+          <br>
+          <img src="{% static 'images/rs1.png' %}" style="width:140px ; margin-left:100px ;" />
+        </div>
+        <div class="card_content">
+          <h2 class="card_title">Classic HD Bin 4</h2>
+          <div class="card_text">
+            <a href="#" style="text-decoration:none" ><h3 style="margin-right: 10px; text-align: center; color:  rgba(49, 193, 227,1 );text-decoration:none">Click here</h3></a>
+          
+            <p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </li>
+      <li class="cards_item">
+      <div class="card">
+        <div class="card_image">
+          <span class="note">Self 5</span>
+          <br>
+          <img src="{% static 'images/rs1.png' %}" style="width:140px ; margin-left:100px ;" />
+        </div>
+        <div class="card_content">
+          <h2 class="card_title">Classic HD Bin 5</h2>
+          <div class="card_text">
+            <a href="#" style="text-decoration:none" ><h3 style="margin-right: 10px; text-align: center; color:  rgba(49, 193, 227,1 );text-decoration:none">Click here</h3></a>
+          
+            <p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </li>
+    <li class="cards_item">
+      <div class="card">
+        <div class="card_image">
+          <span class="note">Self 6</span>
+          <br>
+          <img src="{% static 'images/rs1.png' %}" style="width:140px ; margin-left:100px ;" />
+        </div>
+        <div class="card_content">
+          <h2 class="card_title">Classic HD Bin 6</h2>
+          <div class="card_text">
+            <a href="#" style="text-decoration:none" ><h3 style="margin-right: 10px; text-align: center; color:  rgba(49, 193, 227,1 );text-decoration:none">Click here</h3></a>
+          
+            <p>
+            </p>
+          </div>
+        </div>
+      </div>
+    </li>
+  </ul>
+</div>

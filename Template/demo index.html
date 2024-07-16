@@ -1,0 +1,457 @@
+{% load static %}
+<!DOCTYPE html>
+    <html>
+    <head>
+    <title>Forus Health</title>
+    <link rel="icon" type="image/x-icon" href="{% static 'logo.png' %}" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta charset="utf-8">
+    <!--- Bootstrap 5 CSS link --->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!--- Font Awesom CSS link --->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!--- Live Jquery URL--->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script>
+    <!--- Bootstrap 5 Jquery URL--->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+    <!--- Owl Carousel Js And CSS For Testimonial Slider--->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.css">
+    <!--- style.css, where we will write our custom css--->
+     <link href="{% static 'style.css ' %}" rel="stylesheet" />
+   
+  </head>
+  <body>
+<nav class="navbar navbar-expand-lg fixed-top" id="navbar_top" style="background-color: whitesmoke; ">
+<div class="container"> <a class="navbar-brand" href="store.html" style="color: rgba(49, 193, 227,1 ); background-color: whitesmoke; "><h1 style="font-size: 50px; "><b>Forus Health<span style="font-size:100%;color:rgba(49, 193, 227,1 ); margin-left:15px; ">&hearts;</span> </b></h1></a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar-collapse-toggle" aria-expanded="false"><span class="navbar-toggler-icon"></span></button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbar-collapse-toggle">
+        <ul class="navbar-nav ml-auto">
+          <li ><a href="index.html" ><h3 style="font-family: sans-serif; font-size: 30px;color: rgba(49, 193, 227,1 );"><b><u>Home</u></b></h3></a>
+            <li ><a href="admin_log" ><h3 style="font-family: sans-serif; font-size: 30px;color: rgba(49, 193, 227,1 );"><b><u>Login</u></b></h3></a></li>
+          <!-- <li><a href="#about"><span>About Us</span></a></li>
+          <li><a href="#services"><span>Services</span></a></li>
+          <li><a href="#work"><span>Experience</span></a></li>
+          <li><a href="#work"><span>Portfolio</span></a></li>
+          <li><a href="#blog"><span>Testimonial</span></a></li>
+          <li><a href="#contactus"><span>Contact Us</span></a></li> -->
+        </ul>
+      </div>
+    </div>
+</nav>
+<div class="container-fluid main-section overflow-hidden">
+  <div class="container">
+    <div class="row">
+      <div class="col-md-6 col-12">
+        <div class="banner-left">
+          <h1 style="font-size: 30px; ">Hi There, I'm </h1>
+          <h2 style="color: rgba(49, 193, 227,1 );">Forus Health WareHouse </h2>
+          <span class="head-bottom" ></span>
+          <h3 class="typing">Say Yes to Improve Health & Vision...</h3>
+          <!-- <p>Lorem Ipsum is simply dummy text of the  and typesetting industry. Lorem Ipsum has been the industry's standard dummy text. </p> -->
+
+          <div class="banner-btn">
+           <a href="admin_log"> <button style="font-size: 25px; font-family: 'calibri', sans-serif;" ><b>Login here</b></button></a>
+          </div>
+        </div>
+      </div>
+      <div class="col-md-6 col-12">
+        <div class="banner-top">
+          <div class="banner-img" style="height: 390px; width: 390px;"> <img src= "{% static 'eye-care.png ' %}"> </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+        <meta name="description" content="" />
+        <meta name="author" content="" />
+        <title>Forus Health</title>
+        <!-- Favicon-->
+        <link rel="icon" type="image/x-icon" href="{% static 'images/logo.png' %}" />
+        <!-- Font Awesome icons (free version)-->
+        <script src="https://use.fontawesome.com/releases/v6.3.0/js/all.js" crossorigin="anonymous"></script>
+        <!-- Google fonts-->
+        <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet" type="text/css" />
+        <link href="https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic" rel="stylesheet" type="text/css" />
+        <!-- Core theme CSS (includes Bootstrap)-->
+        <link href="{% static 'css/styles.css ' %}" rel="stylesheet" />
+    </head>
+  
+        <!-- Portfolio Section-->
+        <section class="page-section portfolio" id="portfolio">
+            <div class="container" style="margin-top: -80px;">
+                <!-- Portfolio Section Heading-->
+                <h2 class="page-section-heading text-center text-uppercase text-secondary mb-0" ></h2>
+                <h1 style="color: rgb(49, 193, 227,1); font-size: 45px; text-align: center;" style="margin-top: -40px;" >Products</h1>
+                <!-- Icon Divider-->
+                <div class="divider-custom" >
+                    <div class="divider-custom-line" ></div>
+                    <div class="divider-custom-icon" style="color: rgb(49, 193, 227,1);"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line" ></div>
+                </div>
+                <!-- Portfolio Grid Items-->
+                <div class="row justify-content-center" >
+                    <!-- Portfolio Item 1-->
+                    <div class="col-md-6 col-lg-4 mb-5" style="height: 200px; width: 300px;">
+                        
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal1">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100" style="background-color: rgb(49, 193, 227,1);">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'images/Classic.png' %}" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 2-->
+                    <div class="col-md-6 col-lg-4 mb-5" style="height: 300px; width: 300px;">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal2">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"  style="background-color: rgb(49, 193, 227,1);">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'images/Classic HD.png' %}" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 3-->
+                    <div class="col-md-6 col-lg-4 mb-5" style="height: 300px; width: 300px;">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal3">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"  style="background-color: rgb(49, 193, 227,1);">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'images/Classic 6.4.png' %}" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 4-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-lg-0" style="height: 300px; width: 300px; margin-top: -30px;">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal4">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"  style="background-color: rgb(49, 193, 227,1);">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'images/Aberro.png' %}" alt="..." />
+                        </div>
+                    </div> 
+                    <!-- Portfolio Item 5-->
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0"style="height: 300px; width: 300px; margin-top: -30px;">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal5">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"  style="background-color: rgb(49, 193, 227,1);">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'images/flora.png' %}" alt="..." />
+                        </div>
+                    </div>
+                    <!-- Portfolio Item 6-->
+                    <div class="col-md-6 col-lg-4" style="height: 300px; width: 300px; margin-top: -30px;">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal6">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"  style="background-color: rgb(49, 193, 227,1);">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'images/neo.png' %}" alt="..." />
+                        </div>
+                    </div>
+                    
+                    <div class="col-md-6 col-lg-4 mb-5 mb-md-0" style="height: 300px; width: 300px; margin-top: 30px; margin-left:30px">
+                        <div class="portfolio-item mx-auto" data-bs-toggle="modal" data-bs-target="#portfolioModal7">
+                            <div class="portfolio-item-caption d-flex align-items-center justify-content-center h-100 w-100"  style="background-color: rgb(49, 193, 227,1);">
+                                <div class="portfolio-item-caption-content text-center text-white"><i class="fas fa-plus fa-3x"></i></div>
+                            </div>
+                            <img class="img-fluid" src="{% static 'images/neohd.png' %}" style="height: 300px; width:300px" alt="..." />
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+<br>
+        <br>
+        <br>
+        <br>
+        </section>
+        <br>
+        <br>
+        <br>
+        
+        
+
+        <!-- About Section-->
+        <section class="page-section bg-primary text-white mb-0" id="about" style="margin-top: -280px;" >
+            <div class="container" style="background-color: rgb(49, 193, 227,1);">
+                <!-- About Section Heading-->
+                <br>
+                <br>
+                <h2 class="page-section-heading text-center text-uppercase text-white" >About</h2>
+                <!-- Icon Divider-->
+                <div class="divider-custom divider-light">
+                    <div class="divider-custom-line"></div>
+                    <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                    <div class="divider-custom-line"></div>
+                </div>
+                <!-- About Section Content-->
+                <div class="row">
+                    <div class="col-lg-4 ms-auto"><p class="lead">We develop and manufacture highly advanced medical devices, designed for the effective management of visual health. Our technology solutions are built for affordability and accessibility of both urban and rural patients.
+
+                        </p></div>
+                    <div class="col-lg-4 me-auto"><p class="lead">Today, Forus Health is transforming into a digital healthcare solutions business by also providing integrated and intelligent technology modules, such as cloud-based digital healthcare platforms, to augment the efficiency of our medical systems.</p></div>
+                
+                </div>
+                <br>
+                
+            </div>
+        </section>
+        <!-- Contact Section-->
+    <div class="container"> <a class="navbar-brand" href="store.html" >
+        <!-- Copyright Section-->
+        <div class="copyright py-4 text-center text-white" style="background-position: center;
+        background-repeat: no-repeat;
+        color: rgba(49, 193, 227,1 ); background-color: whitesmoke;">
+            <div class="container" ><h4 style="color: rgba(49, 193, 227,1 ); font-style:Raleway; font-family: sans-serif; "> Forus Health Pvt Ltd &copy; 2024 </h4></div>
+        </div>
+    </div>
+
+        <!-- Portfolio Modals-->
+        <!-- Portfolio Modal 1-->
+        <div class="portfolio-modal modal fade" id="portfolioModal1" tabindex="-1" aria-labelledby="portfolioModal1" aria-hidden="true" >
+            <div class="modal-dialog modal-xl" style="width: 700px; ">
+                <div class="modal-content" >
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container"  >
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h3 class="portfolio-modal-title text-secondary text-uppercase mb-0"><h3>3nethra classic</h3></h3>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5" style="width: 200px; height: 200px;" src="{% static 'images/Classic.png' %}"alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">
+                                        The 3nethra classic is a compact, portable, and easy-to-use non-mydriatic digital imaging device. It is designed to acquire, display, store, and transmit images of the posterior and anterior surfaces of the human eye.</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" style="background-color: rgb(49, 193, 227,1);">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 2-->
+        <div class="portfolio-modal modal fade" id="portfolioModal2" tabindex="-1" aria-labelledby="portfolioModal2" aria-hidden="true">
+            <div class="modal-dialog modal-xl" style="width: 700px;">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Classic HD</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5"  style="width: 200px; height: 200px;" src="{% static 'images/Classic HD.png' %}"alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">The‌ 3nethra‌ ‌classic‌ ‌HD‌ ‌is‌ ‌a‌ ‌digital‌ ‌fundus‌ ‌camera‌ ‌that‌ ‌combines‌ ‌the‌ ‌best‌ ‌of‌ ‌workflow‌ ‌and‌ ‌ design.‌ ‌It‌ ‌captures‌ ‌high-resolution,‌ ‌undistorted,‌ ‌and‌ ‌uniformly ‌illuminated‌ ‌images‌ ‌of‌ ‌the‌ ‌retina‌ and‌ ‌surfaces‌ ‌such‌ ‌as‌ ‌the‌ ‌cornea.‌</p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" style="background-color: rgb(49, 193, 227,1);">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 3-->
+        <div class="portfolio-modal modal fade" id="portfolioModal3" tabindex="-1" aria-labelledby="portfolioModal3" aria-hidden="true">
+            <div class="modal-dialog modal-xl"style="width: 700px; ">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Classic 6.4</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5"  style="width: 200px; height: 200px;" src="{% static 'images/Classic 6.4.png' %}" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">The 3nethra classic 6.4 is a digital non-mydriatic fundus camera that allows eye care professionals to capture high-quality images of the posterior and anterior segments of the human eye.
+
+                                    </p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" style="background-color: rgb(49, 193, 227,1);">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 4-->
+        <div class="portfolio-modal modal fade" id="portfolioModal4" tabindex="-1" aria-labelledby="portfolioModal4" aria-hidden="true">
+            <div class="modal-dialog modal-xl" style="width: 700px; ">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Aberro</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5"  style="width: 200px; height: 200px;" src="{% static 'images/Aberro.png' %}" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">The 3nethra aberro is a handheld autorefractometer equipped with the Shack-Hartmann Wavefront sensor aberrometry technology to detect visual acuity and refractive errors.
+
+                                    </p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" style="background-color: rgb(49, 193, 227,1);">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 5-->
+        <div class="portfolio-modal modal fade" id="portfolioModal5" tabindex="-1" aria-labelledby="portfolioModal5" aria-hidden="true">
+            <div class="modal-dialog modal-xl" style="width: 700px; ">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">flora</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5"  style="width: 200px; height: 200px;" src="{% static 'images/flora.png' %}" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">The 3nethra flora is a mydriatic and non-contact device that captures fluorescein angiography and posterior surface images of the human eye. It is capable of effectively imaging and monitoring a broad range of eye disorders.
+
+                                    </p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" style="background-color: rgb(49, 193, 227,1);">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Portfolio Modal 6-->
+        <div class="portfolio-modal modal fade" id="portfolioModal6" tabindex="-1" aria-labelledby="portfolioModal6" aria-hidden="true">
+            <div class="modal-dialog modal-xl" style="width: 700px; ">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Neo</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5"  style="width: 200px; height: 200px;" src="{% static 'images/neo.png' %}" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">The 3nethra neo is a compact, portable, and easy-to-use mydriatic wide-field digital imaging camera used for the photo documentation of ocular diseases that manifest in human eyes.
+
+                                    </p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" style="background-color: rgb(49, 193, 227,1);">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+<div class="portfolio-modal modal fade" id="portfolioModal7" tabindex="-1" aria-labelledby="portfolioModal7" aria-hidden="true">
+            <div class="modal-dialog modal-xl" style="width: 700px; ">
+                <div class="modal-content">
+                    <div class="modal-header border-0"><button class="btn-close" type="button" data-bs-dismiss="modal" aria-label="Close"></button></div>
+                    <div class="modal-body text-center pb-5">
+                        <div class="container">
+                            <div class="row justify-content-center">
+                                <div class="col-lg-8">
+                                    <!-- Portfolio Modal - Title-->
+                                    <h2 class="portfolio-modal-title text-secondary text-uppercase mb-0">Neo HD</h2>
+                                    <!-- Icon Divider-->
+                                    <div class="divider-custom">
+                                        <div class="divider-custom-line"></div>
+                                        <div class="divider-custom-icon"><i class="fas fa-star"></i></div>
+                                        <div class="divider-custom-line"></div>
+                                    </div>
+                                    <!-- Portfolio Modal - Image-->
+                                    <img class="img-fluid rounded mb-5"  style="width: 200px; height: 200px;" src="{% static 'images/neohd1.png' %}" alt="..." />
+                                    <!-- Portfolio Modal - Text-->
+                                    <p class="mb-4">The 3nethra neo is a compact, portable, and easy-to-use mydriatic wide-field digital imaging camera used for the photo documentation of ocular diseases that manifest in human eyes.
+
+                                    </p>
+                                    <button class="btn btn-primary" data-bs-dismiss="modal" style="background-color: rgb(49, 193, 227,1);">
+                                        <i class="fas fa-xmark fa-fw"></i>
+                                        Close 
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Bootstrap core JS-->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.3/dist/js/bootstrap.bundle.min.js"></script>
+        <!-- Core theme JS-->
+        <script src="{% static 'js/scripts.js' %}"></script>
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <!-- * *                               SB Forms JS                               * *-->
+        <!-- * * Activate your form at https://startbootstrap.com/solution/contact-forms * *-->
+        <!-- * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * * *-->
+        <script src="https://cdn.startbootstrap.com/sb-forms-latest.js"></script>
+    </body>
+</html>

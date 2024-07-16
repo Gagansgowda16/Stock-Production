@@ -1,0 +1,368 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=0">
+<meta name="description" content="POS - Bootstrap Admin Template">
+<meta name="keywords" content="admin, estimates, bootstrap, business, corporate, creative, invoice, html5, responsive, Projects">
+<meta name="author" content="Dreamguys - Bootstrap Admin Template">
+<meta name="robots" content="noindex, nofollow">
+<title>Forus Health</title>
+
+<link rel="shortcut icon" type="image/x-icon" href="{% static 'images/logo.png' %}">
+
+<link rel="stylesheet" href="{% static 'assets/css/bootstrap.min.css' %}">
+
+<link rel="stylesheet" href="{% static 'assets/css/animate.css' %}">
+
+<link rel="stylesheet" href="{% static 'assets/plugins/select2/css/select2.min.css' %}">
+
+<link rel="stylesheet" href="{% static 'assets/css/dataTables.bootstrap4.min.css' %}">
+
+<link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/fontawesome.min.css' %}">
+<link rel="stylesheet" href="{% static 'assets/plugins/fontawesome/css/all.min.css' %}">
+
+<link rel="stylesheet" href="{% static 'assets/css/style.css' %}">
+</head>
+<body>
+<div id="global-loader">
+<div class="whirly-loader"> </div>
+</div>
+
+<div class="main-wrapper">
+
+<div class="header">
+
+<div class="header-left active">
+<a href="index.html" class="logo">
+<img src="{% static 'images/forus-health.svg' %}" alt="">
+</a>
+<a href="index.html" class="logo-small">
+<img src="{% static 'assets/img/logo-small.png' %}"alt="">
+</a>
+<a id="toggle_btn" href="javascript:void(0);">
+</a>
+</div>
+
+<a id="mobile_btn" class="mobile_btn" href="#sidebar">
+<span class="bar-icon">
+<span></span>
+<span></span>
+<span></span>
+</span>
+</a>
+
+<ul class="nav user-menu">
+
+<li class="nav-item">
+<div class="top-nav-search">
+<a href="javascript:void(0);" class="responsive-search">
+<i class="fa fa-search"></i>
+</a>
+
+    <a href="dash1" class="btn btn-cancel" style="margin-left: 920px; margin-top:5px;">Back</a>
+
+</div>
+</li>
+
+
+
+
+
+
+<li class="nav-item dropdown has-arrow main-drop">
+
+
+</div>
+</li>
+</ul>
+
+
+<div class="dropdown mobile-user-menu">
+
+
+</div>
+
+</div>
+
+
+<div class="sidebar" id="sidebar">
+<div class="sidebar-inner slimscroll">
+<div id="sidebar-menu" class="sidebar-menu">
+<ul>
+
+
+
+<li class="submenu">
+<a href="javascript:void(0);"><img src="{% static 'assets/img/icons/users1.svg' %}"alt="img"><span> Stock Data</span> <span class="menu-arrow"></span></a>
+<ul>
+<li><a href="viewdata">Stock list </a></li>
+<li><a href="recstock">Edit Received list </a></li>
+<li><a href="Issued">Edit Issued list </a></li>
+</ul>
+   
+</li>
+<!-- <li class="submenu">
+    <a href="javascript:void(0);"><img src="{% static 'assets/img/icons/users1.svg' %}"alt="img"><span>  Edit Stock</span> <span class="menu-arrow"></span></a>
+    <ul>
+    <li><a href="edit">Edit Stock list  </a></li>
+    </ul>
+    </li> -->
+</ul>
+</div>
+</div>
+</div>
+
+<div class="page-wrapper">
+<div class="content">
+<div class="page-header">
+<div class="page-title">
+    <style>
+    .circle1 {
+        width: 150px;
+        height: 110px;
+        background: white;
+        color: white;
+        border: 2px solid #000;
+        border-radius: 50%;
+        margin-bottom: 20px;
+        margin-left: 500px;
+      }
+   </style>
+   <div class="circle1" style="text-align: center; " ><b><img class="img-fluid" src="{% static 'images/bin-removebg.png' %}" style="height: 120px; width: 120px; ; align-items: center;margin-bottom: 10px; margin-right: 10px;"   alt="..." /></b></div>
+
+  </li>
+  </li>
+<h4> Edit Bin Card</h4>
+<h6> Bin Information: <h5 style="color: rgba(49, 193, 227,1 );">{{msg}}</h5></h6>
+
+</div>
+</div>
+<form action="bincard" method="POST">
+    {% csrf_token %}
+<div class="card">
+<div class="card-body">
+<div class="row">
+<div class="col-lg-3 col-sm-6 col-12">
+<div class="form-group">
+<label>ERP Part No</label>
+<input type="text" name="erp" value='{{data.ERP_NO}}' readonly>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 col-12">
+    <div class="form-group">
+    <label>Material Part No</label>
+    <input type="text" name='mp' value="{{data.MP_NO}}" readonly>
+    </div>
+    </div>
+<div class="col-lg-3 col-sm-6 col-12">
+<div class="form-group">
+<label>Store Room Number</label>
+<select class="select" name='st' readonly>
+<option>{{data.str}}</option>
+
+</select>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 col-12">
+    <div class="form-group">
+    <label>Devices </label>
+    <select class="select" name=dv readonly>
+    <option>{{data.devr1}}</option>
+    
+    </select>
+    </div>
+    </div>
+<div class="col-lg-3 col-sm-6 col-12">
+<div class="form-group">
+<label>Rack Number</label>
+<select class="select" name='rk' readonly>
+<option>{{data.rkr}}</option>
+</select>
+</div>
+</div>
+<div class="col-lg-3 col-sm-6 col-12">
+    <div class="form-group">
+        <label>Shelf</label>
+        <select class="select" name='shelf' readonly>
+        <option> {{data.shelf}}</option>
+    </select>
+    </div>
+    </div>
+
+<div class="col-lg-3 col-sm-6 col-12">
+<div class="form-group">
+<label>Bin</label>
+<select class="select" name='binc' readonly>
+<option> {{data.binr}}</option>
+
+</select>
+</div>
+</div>
+<div class="form-group">
+<label>Item</label>
+<div class="dropdown">
+  <button class="dropbtn" style="height:45px; width: 130px;"><h6 style="margin-top:-6px ;">Items List</h6></button>
+  <div class="dropdown-content">
+   {% for i in data1 %}
+    <a href="newitem{{i.id}}"> <b>{{i.item}}</b></a>
+    {% endfor %}
+  </div>
+  </div>
+</div>
+    <style>
+.dropbtn {
+  background-color: rgba(49, 193, 227,1 );;
+  color: white;
+  padding: 16px;
+  font-size: 16px;
+  border: none;
+  cursor: pointer;
+}
+
+.dropdown {
+  position: relative;
+  display: inline-block;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: whitesmoke;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-content a {
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+}
+
+.dropdown-content a:hover {background-color: #f1f1f1}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.dropdown:hover .dropbtn {
+  background-color: rgba(49, 193, 227,1 );;
+}
+</style>
+
+
+  
+<div class="col-lg-3 col-sm-6 col-12">
+<div class="form-group">
+    
+        <label  for="date" >Date:</label>
+        <input id="birthday" name="Date" value="{{data.date}}"  required style="height:38px; width: 100px; text-align: center;" >
+        <!-- <input type="date" id="birthday" name="Date" value="{{data.date}}"  required style="height:38px" > -->
+
+    
+</div>
+</div>
+<div class="col-lg-12">
+    <div class="form-group">
+    <label>Description of Item</label>
+    <textarea class="form-control" name="des" required>{{data.desc}}</textarea>
+    </div>
+    </div>
+
+<div class="col-lg-3 col-sm-6 col-12">
+    <div class="form-group">
+    <label>Previous Balance</label>
+    <input type="text" id="input1" name="pb" value="{{data.pb}}" required>
+    </div>
+    </div>
+<div class="col-lg-3 col-sm-6 col-12">
+    <div class="form-group">
+    <label>Nos. Received</label>
+    <input  type="text" id="input2" name="re" value="{{data.no_received}}" required>
+    </div>
+    </div>
+<div class="col-lg-3 col-sm-6 col-12">
+    <div class="form-group">
+    <label>Nos. Issued</label>
+    <input type="text" id="input3" name="issue" value="{{data.no_issue}}" required>
+    </div>
+    </div>
+    <div class="col-lg-3 col-sm-6 col-12">
+        <div class="form-group">
+        <p class="sign" id="add" style="font-size: 15px;">Stock Balance
+           <br><input id="output1" size="20" name="sb" style="height: 38px; margin-top:6px;" value="{{data.sb}}"  required/>
+        </p>
+       
+    </div>
+        </div>
+    <script>
+    
+        var do_calcul = function() {
+            var num1 = Number(document.getElementById("input1").value);
+            var num2 = Number(document.getElementById("input2").value);
+            var num3 = Number(document.getElementById("input3").value);
+            var result;
+        
+            if (this.id == "add") {
+                result = num1 + num2 - num3;
+            } else if (this.id == "substract") {
+                result = num1 - num2;
+            }
+            document.getElementById("output1").value = result;
+        };
+        
+        var signs_buttons = document.getElementsByClassName("sign");
+        for(var i=0;i<signs_buttons.length;i++){
+            signs_buttons[i].addEventListener('click', do_calcul, false);
+        }
+            </script>
+    <div class="col-lg-3 col-sm-6 col-12">
+        <div class="form-group">
+        <label>Reference Document Number</label>
+        <input type="text"  name="rdno" value="{{data.rdno}}"  required>
+        </div>
+        </div>
+    <div class="col-lg-12">
+            <div class="form-group">
+            <label>Remarks </label>
+            <textarea class="form-control" name="rm" value="{{data.remarks}}" required></textarea>
+            </div>
+            </div>
+
+<div class="col-lg-12">
+    <input type="Submit"class="btn btn-submit me-2" name="submit">
+
+<a href="productedit" class="btn btn-cancel">Cancel</a>
+</form>
+</div>
+</div>
+</div>
+</div>
+
+</div>
+</div>
+</div>
+
+
+<script src="{% static 'assets/js/jquery-3.6.0.min.js' %}"></script>
+
+<script src="{% static 'assets/js/feather.min.js' %}"></script>
+
+<script src="{% static 'assets/js/jquery.slimscroll.min.js' %}"></script>
+
+<script src="{% static 'assets/js/jquery.dataTables.min.js' %}"></script>
+<script src="{% static 'assets/js/dataTables.bootstrap4.min.js' %}"></script>
+
+<script src="{% static 'assets/js/bootstrap.bundle.min.js' %}"></script>
+
+<script src="{% static 'assets/plugins/select2/js/select2.min.js' %}"></script>
+
+<script src="{% static 'assets/plugins/sweetalert/sweetalert2.all.min.js' %}"></script>
+<script src="{% static 'assets/plugins/sweetalert/sweetalerts.min.js' %}"></script>
+
+<script src="{% static 'assets/js/script.js' %}"></script>
+</body>
+</html>
